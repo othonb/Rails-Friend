@@ -7666,3 +7666,383 @@ Processing by FriendsController#index as TURBO_STREAM
 Completed 200 OK in 11ms (Views: 9.6ms | ActiveRecord: 0.2ms | Allocations: 8173)
 
 
+Started GET "/friends/25" for 127.0.0.1 at 2021-12-27 18:54:52 -0300
+Processing by FriendsController#show as HTML
+  Parameters: {"id"=>"25"}
+  [1m[36mFriend Load (0.3ms)[0m  [1m[34mSELECT `friends`.* FROM `friends` WHERE `friends`.`id` = 25 LIMIT 1[0m
+  ↳ app/controllers/friends_controller.rb:63:in `set_friend'
+  Rendering layout layouts/application.html.erb
+  Rendering friends/show.html.erb within layouts/application
+  Rendered friends/show.html.erb within layouts/application (Duration: 0.8ms | Allocations: 510)
+  Rendered home/_header.html.erb (Duration: 0.6ms | Allocations: 295)
+  Rendered layout layouts/application.html.erb (Duration: 5.7ms | Allocations: 3868)
+Completed 200 OK in 10ms (Views: 7.4ms | ActiveRecord: 0.3ms | Allocations: 5583)
+
+
+Started GET "/friends/25" for 127.0.0.1 at 2021-12-27 18:54:56 -0300
+Processing by FriendsController#show as HTML
+  Parameters: {"id"=>"25"}
+  [1m[36mFriend Load (0.3ms)[0m  [1m[34mSELECT `friends`.* FROM `friends` WHERE `friends`.`id` = 25 LIMIT 1[0m
+  ↳ app/controllers/friends_controller.rb:63:in `set_friend'
+  Rendering layout layouts/application.html.erb
+  Rendering friends/show.html.erb within layouts/application
+  Rendered friends/show.html.erb within layouts/application (Duration: 0.3ms | Allocations: 131)
+  Rendered home/_header.html.erb (Duration: 0.1ms | Allocations: 80)
+  Rendered layout layouts/application.html.erb (Duration: 3.5ms | Allocations: 2589)
+Completed 200 OK in 6ms (Views: 3.9ms | ActiveRecord: 0.3ms | Allocations: 3510)
+
+
+Started GET "/friends" for 127.0.0.1 at 2021-12-27 18:55:00 -0300
+Processing by FriendsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering friends/index.html.erb within layouts/application
+  [1m[36mFriend Load (0.3ms)[0m  [1m[34mSELECT `friends`.* FROM `friends`[0m
+  ↳ app/views/friends/index.html.erb:18
+  Rendered friends/index.html.erb within layouts/application (Duration: 10.3ms | Allocations: 4981)
+  Rendered home/_header.html.erb (Duration: 0.1ms | Allocations: 80)
+  Rendered layout layouts/application.html.erb (Duration: 13.2ms | Allocations: 7285)
+Completed 200 OK in 15ms (Views: 13.8ms | ActiveRecord: 0.3ms | Allocations: 7709)
+
+
+Started GET "/friends/19" for 127.0.0.1 at 2021-12-27 18:55:23 -0300
+Processing by FriendsController#show as HTML
+  Parameters: {"id"=>"19"}
+  [1m[36mFriend Load (0.3ms)[0m  [1m[34mSELECT `friends`.* FROM `friends` WHERE `friends`.`id` = 19 LIMIT 1[0m
+  ↳ app/controllers/friends_controller.rb:63:in `set_friend'
+  Rendering layout layouts/application.html.erb
+  Rendering friends/show.html.erb within layouts/application
+  Rendered friends/show.html.erb within layouts/application (Duration: 1.1ms | Allocations: 847)
+  Rendered home/_header.html.erb (Duration: 0.5ms | Allocations: 300)
+  Rendered layout layouts/application.html.erb (Duration: 8.6ms | Allocations: 3982)
+Completed 200 OK in 13ms (Views: 10.5ms | ActiveRecord: 0.3ms | Allocations: 5688)
+
+
+Started GET "/friends/19" for 127.0.0.1 at 2021-12-27 18:55:48 -0300
+Processing by FriendsController#show as HTML
+  Parameters: {"id"=>"19"}
+  [1m[36mFriend Load (0.2ms)[0m  [1m[34mSELECT `friends`.* FROM `friends` WHERE `friends`.`id` = 19 LIMIT 1[0m
+  ↳ app/controllers/friends_controller.rb:63:in `set_friend'
+  Rendering layout layouts/application.html.erb
+  Rendering friends/show.html.erb within layouts/application
+  Rendered friends/show.html.erb within layouts/application (Duration: 1.1ms | Allocations: 841)
+  Rendered home/_header.html.erb (Duration: 0.5ms | Allocations: 295)
+  Rendered layout layouts/application.html.erb (Duration: 5.2ms | Allocations: 3971)
+Completed 200 OK in 9ms (Views: 6.9ms | ActiveRecord: 0.2ms | Allocations: 5744)
+
+
+Started DELETE "/friends/19" for 127.0.0.1 at 2021-12-27 18:55:55 -0300
+Processing by FriendsController#destroy as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"19"}
+  [1m[36mFriend Load (0.2ms)[0m  [1m[34mSELECT `friends`.* FROM `friends` WHERE `friends`.`id` = 19 LIMIT 1[0m
+  ↳ app/controllers/friends_controller.rb:63:in `set_friend'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/friends_controller.rb:52:in `destroy'
+  [1m[36mFriend Destroy (0.2ms)[0m  [1m[31mDELETE FROM `friends` WHERE `friends`.`id` = 19[0m
+  ↳ app/controllers/friends_controller.rb:52:in `destroy'
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/friends_controller.rb:52:in `destroy'
+Redirected to http://localhost:3000/friends
+Completed 302 Found in 6ms (ActiveRecord: 2.3ms | Allocations: 2666)
+
+
+Started GET "/friends" for 127.0.0.1 at 2021-12-27 18:55:55 -0300
+Processing by FriendsController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering friends/index.html.erb within layouts/application
+  [1m[36mFriend Load (0.3ms)[0m  [1m[34mSELECT `friends`.* FROM `friends`[0m
+  ↳ app/views/friends/index.html.erb:18
+  Rendered friends/index.html.erb within layouts/application (Duration: 5.9ms | Allocations: 4651)
+  Rendered home/_header.html.erb (Duration: 0.2ms | Allocations: 80)
+  Rendered layouts/_alerts.erb (Duration: 0.4ms | Allocations: 165)
+  Rendered layout layouts/application.html.erb (Duration: 10.2ms | Allocations: 7298)
+Completed 200 OK in 12ms (Views: 10.5ms | ActiveRecord: 0.3ms | Allocations: 7787)
+
+
+Started DELETE "/friends/25" for 127.0.0.1 at 2021-12-27 18:56:04 -0300
+Processing by FriendsController#destroy as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"25"}
+  [1m[36mFriend Load (0.3ms)[0m  [1m[34mSELECT `friends`.* FROM `friends` WHERE `friends`.`id` = 25 LIMIT 1[0m
+  ↳ app/controllers/friends_controller.rb:63:in `set_friend'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/friends_controller.rb:52:in `destroy'
+  [1m[36mFriend Destroy (0.7ms)[0m  [1m[31mDELETE FROM `friends` WHERE `friends`.`id` = 25[0m
+  ↳ app/controllers/friends_controller.rb:52:in `destroy'
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/friends_controller.rb:52:in `destroy'
+Redirected to http://localhost:3000/friends
+Completed 302 Found in 8ms (ActiveRecord: 2.2ms | Allocations: 2567)
+
+
+Started GET "/friends" for 127.0.0.1 at 2021-12-27 18:56:04 -0300
+Processing by FriendsController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering friends/index.html.erb within layouts/application
+  [1m[36mFriend Load (0.2ms)[0m  [1m[34mSELECT `friends`.* FROM `friends`[0m
+  ↳ app/views/friends/index.html.erb:18
+  Rendered friends/index.html.erb within layouts/application (Duration: 4.7ms | Allocations: 3914)
+  Rendered home/_header.html.erb (Duration: 0.1ms | Allocations: 80)
+  Rendered layouts/_alerts.erb (Duration: 0.0ms | Allocations: 17)
+  Rendered layout layouts/application.html.erb (Duration: 7.7ms | Allocations: 6298)
+Completed 200 OK in 9ms (Views: 7.9ms | ActiveRecord: 0.2ms | Allocations: 6642)
+
+
+Started DELETE "/friends/17" for 127.0.0.1 at 2021-12-27 18:56:21 -0300
+Processing by FriendsController#destroy as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"17"}
+  [1m[36mFriend Load (0.2ms)[0m  [1m[34mSELECT `friends`.* FROM `friends` WHERE `friends`.`id` = 17 LIMIT 1[0m
+  ↳ app/controllers/friends_controller.rb:63:in `set_friend'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/friends_controller.rb:52:in `destroy'
+  [1m[36mFriend Destroy (0.2ms)[0m  [1m[31mDELETE FROM `friends` WHERE `friends`.`id` = 17[0m
+  ↳ app/controllers/friends_controller.rb:52:in `destroy'
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/friends_controller.rb:52:in `destroy'
+Redirected to http://localhost:3000/friends
+Completed 302 Found in 5ms (ActiveRecord: 1.1ms | Allocations: 2552)
+
+
+Started GET "/friends" for 127.0.0.1 at 2021-12-27 18:56:21 -0300
+Processing by FriendsController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering friends/index.html.erb within layouts/application
+  [1m[36mFriend Load (0.2ms)[0m  [1m[34mSELECT `friends`.* FROM `friends`[0m
+  ↳ app/views/friends/index.html.erb:18
+  Rendered friends/index.html.erb within layouts/application (Duration: 4.5ms | Allocations: 3594)
+  Rendered home/_header.html.erb (Duration: 0.1ms | Allocations: 80)
+  Rendered layouts/_alerts.erb (Duration: 0.0ms | Allocations: 17)
+  Rendered layout layouts/application.html.erb (Duration: 7.4ms | Allocations: 5978)
+Completed 200 OK in 8ms (Views: 7.5ms | ActiveRecord: 0.2ms | Allocations: 6322)
+
+
+Started DELETE "/friends/18" for 127.0.0.1 at 2021-12-27 18:58:48 -0300
+Processing by FriendsController#destroy as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"18"}
+  [1m[36mFriend Load (0.2ms)[0m  [1m[34mSELECT `friends`.* FROM `friends` WHERE `friends`.`id` = 18 LIMIT 1[0m
+  ↳ app/controllers/friends_controller.rb:63:in `set_friend'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/friends_controller.rb:52:in `destroy'
+  [1m[36mFriend Destroy (0.2ms)[0m  [1m[31mDELETE FROM `friends` WHERE `friends`.`id` = 18[0m
+  ↳ app/controllers/friends_controller.rb:52:in `destroy'
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/friends_controller.rb:52:in `destroy'
+Redirected to http://localhost:3000/friends
+Completed 302 Found in 5ms (ActiveRecord: 1.5ms | Allocations: 2567)
+
+
+Started GET "/friends" for 127.0.0.1 at 2021-12-27 18:58:48 -0300
+Processing by FriendsController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering friends/index.html.erb within layouts/application
+  [1m[36mFriend Load (0.3ms)[0m  [1m[34mSELECT `friends`.* FROM `friends`[0m
+  ↳ app/views/friends/index.html.erb:18
+  Rendered friends/index.html.erb within layouts/application (Duration: 4.8ms | Allocations: 3855)
+  Rendered home/_header.html.erb (Duration: 0.5ms | Allocations: 298)
+  Rendered layouts/_alerts.erb (Duration: 0.5ms | Allocations: 183)
+  Rendered layout layouts/application.html.erb (Duration: 9.8ms | Allocations: 7331)
+Completed 200 OK in 12ms (Views: 11.0ms | ActiveRecord: 0.3ms | Allocations: 8566)
+
+
+Started DELETE "/friends/24" for 127.0.0.1 at 2021-12-27 18:59:29 -0300
+Processing by FriendsController#destroy as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"24"}
+  [1m[36mFriend Load (0.2ms)[0m  [1m[34mSELECT `friends`.* FROM `friends` WHERE `friends`.`id` = 24 LIMIT 1[0m
+  ↳ app/controllers/friends_controller.rb:63:in `set_friend'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/friends_controller.rb:52:in `destroy'
+  [1m[36mFriend Destroy (0.2ms)[0m  [1m[31mDELETE FROM `friends` WHERE `friends`.`id` = 24[0m
+  ↳ app/controllers/friends_controller.rb:52:in `destroy'
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/friends_controller.rb:52:in `destroy'
+Redirected to http://localhost:3000/friends
+Completed 302 Found in 5ms (ActiveRecord: 1.3ms | Allocations: 2643)
+
+
+Started GET "/friends" for 127.0.0.1 at 2021-12-27 18:59:29 -0300
+Processing by FriendsController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering friends/index.html.erb within layouts/application
+  [1m[36mFriend Load (0.2ms)[0m  [1m[34mSELECT `friends`.* FROM `friends`[0m
+  ↳ app/views/friends/index.html.erb:18
+  Rendered friends/index.html.erb within layouts/application (Duration: 4.8ms | Allocations: 3522)
+  Rendered home/_header.html.erb (Duration: 0.6ms | Allocations: 297)
+  Rendered layouts/_alerts.erb (Duration: 0.4ms | Allocations: 175)
+  Rendered layout layouts/application.html.erb (Duration: 10.3ms | Allocations: 6991)
+Completed 200 OK in 13ms (Views: 12.2ms | ActiveRecord: 0.2ms | Allocations: 8242)
+
+
+Started GET "/friends" for 127.0.0.1 at 2021-12-27 18:59:37 -0300
+Processing by FriendsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering friends/index.html.erb within layouts/application
+  [1m[36mFriend Load (0.2ms)[0m  [1m[34mSELECT `friends`.* FROM `friends`[0m
+  ↳ app/views/friends/index.html.erb:18
+  Rendered friends/index.html.erb within layouts/application (Duration: 3.5ms | Allocations: 2857)
+  Rendered home/_header.html.erb (Duration: 0.1ms | Allocations: 80)
+  Rendered layout layouts/application.html.erb (Duration: 6.3ms | Allocations: 5172)
+Completed 200 OK in 7ms (Views: 6.5ms | ActiveRecord: 0.2ms | Allocations: 5531)
+
+
+Started DELETE "/friends/22" for 127.0.0.1 at 2021-12-27 18:59:44 -0300
+Processing by FriendsController#destroy as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"22"}
+  [1m[36mFriend Load (0.5ms)[0m  [1m[34mSELECT `friends`.* FROM `friends` WHERE `friends`.`id` = 22 LIMIT 1[0m
+  ↳ app/controllers/friends_controller.rb:63:in `set_friend'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/friends_controller.rb:52:in `destroy'
+  [1m[36mFriend Destroy (0.2ms)[0m  [1m[31mDELETE FROM `friends` WHERE `friends`.`id` = 22[0m
+  ↳ app/controllers/friends_controller.rb:52:in `destroy'
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/friends_controller.rb:52:in `destroy'
+Redirected to http://localhost:3000/friends
+Completed 302 Found in 6ms (ActiveRecord: 1.6ms | Allocations: 2637)
+
+
+Started GET "/friends" for 127.0.0.1 at 2021-12-27 18:59:44 -0300
+Processing by FriendsController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering friends/index.html.erb within layouts/application
+  [1m[36mFriend Load (0.2ms)[0m  [1m[34mSELECT `friends`.* FROM `friends`[0m
+  ↳ app/views/friends/index.html.erb:18
+  Rendered friends/index.html.erb within layouts/application (Duration: 3.2ms | Allocations: 2571)
+  Rendered home/_header.html.erb (Duration: 0.3ms | Allocations: 80)
+  Rendered layouts/_alerts.erb (Duration: 0.0ms | Allocations: 17)
+  Rendered layout layouts/application.html.erb (Duration: 7.1ms | Allocations: 4958)
+Completed 200 OK in 8ms (Views: 7.2ms | ActiveRecord: 0.2ms | Allocations: 5302)
+
+
+Started GET "/friends" for 127.0.0.1 at 2021-12-27 19:03:43 -0300
+Processing by FriendsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering friends/index.html.erb within layouts/application
+  [1m[36mFriend Load (0.2ms)[0m  [1m[34mSELECT `friends`.* FROM `friends`[0m
+  ↳ app/views/friends/index.html.erb:18
+  Rendered friends/index.html.erb within layouts/application (Duration: 4.4ms | Allocations: 3167)
+  Rendered home/_header.html.erb (Duration: 0.5ms | Allocations: 298)
+  Rendered layout layouts/application.html.erb (Duration: 9.0ms | Allocations: 6311)
+Completed 200 OK in 11ms (Views: 10.3ms | ActiveRecord: 0.2ms | Allocations: 7493)
+
+
+Started DELETE "/friends/23" for 127.0.0.1 at 2021-12-27 19:03:46 -0300
+Processing by FriendsController#destroy as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"23"}
+  [1m[36mFriend Load (0.2ms)[0m  [1m[34mSELECT `friends`.* FROM `friends` WHERE `friends`.`id` = 23 LIMIT 1[0m
+  ↳ app/controllers/friends_controller.rb:63:in `set_friend'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/friends_controller.rb:52:in `destroy'
+  [1m[36mFriend Destroy (0.3ms)[0m  [1m[31mDELETE FROM `friends` WHERE `friends`.`id` = 23[0m
+  ↳ app/controllers/friends_controller.rb:52:in `destroy'
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/friends_controller.rb:52:in `destroy'
+Redirected to http://localhost:3000/friends
+Completed 302 Found in 7ms (ActiveRecord: 2.2ms | Allocations: 2638)
+
+
+Started GET "/friends" for 127.0.0.1 at 2021-12-27 19:03:46 -0300
+Processing by FriendsController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering friends/index.html.erb within layouts/application
+  [1m[36mFriend Load (0.2ms)[0m  [1m[34mSELECT `friends`.* FROM `friends`[0m
+  ↳ app/views/friends/index.html.erb:18
+  Rendered friends/index.html.erb within layouts/application (Duration: 2.8ms | Allocations: 2218)
+  Rendered home/_header.html.erb (Duration: 0.1ms | Allocations: 80)
+  Rendered layouts/_alerts.erb (Duration: 0.6ms | Allocations: 170)
+  Rendered layout layouts/application.html.erb (Duration: 7.4ms | Allocations: 4873)
+Completed 200 OK in 8ms (Views: 7.6ms | ActiveRecord: 0.2ms | Allocations: 5281)
+
+
+Started DELETE "/friends/21" for 127.0.0.1 at 2021-12-27 19:03:54 -0300
+Processing by FriendsController#destroy as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"21"}
+  [1m[36mFriend Load (0.3ms)[0m  [1m[34mSELECT `friends`.* FROM `friends` WHERE `friends`.`id` = 21 LIMIT 1[0m
+  ↳ app/controllers/friends_controller.rb:63:in `set_friend'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/friends_controller.rb:52:in `destroy'
+  [1m[36mFriend Destroy (2.5ms)[0m  [1m[31mDELETE FROM `friends` WHERE `friends`.`id` = 21[0m
+  ↳ app/controllers/friends_controller.rb:52:in `destroy'
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/friends_controller.rb:52:in `destroy'
+Redirected to http://localhost:3000/friends
+Completed 302 Found in 13ms (ActiveRecord: 4.2ms | Allocations: 2555)
+
+
+Started GET "/friends" for 127.0.0.1 at 2021-12-27 19:03:54 -0300
+Processing by FriendsController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering friends/index.html.erb within layouts/application
+  [1m[36mFriend Load (0.2ms)[0m  [1m[34mSELECT `friends`.* FROM `friends`[0m
+  ↳ app/views/friends/index.html.erb:18
+  Rendered friends/index.html.erb within layouts/application (Duration: 3.0ms | Allocations: 1864)
+  Rendered home/_header.html.erb (Duration: 0.1ms | Allocations: 80)
+  Rendered layouts/_alerts.erb (Duration: 0.0ms | Allocations: 17)
+  Rendered layout layouts/application.html.erb (Duration: 6.9ms | Allocations: 4248)
+Completed 200 OK in 8ms (Views: 7.1ms | ActiveRecord: 0.2ms | Allocations: 4592)
+
+
+Started GET "/friends" for 127.0.0.1 at 2021-12-27 19:04:27 -0300
+Processing by FriendsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering friends/index.html.erb within layouts/application
+  [1m[36mFriend Load (0.2ms)[0m  [1m[34mSELECT `friends`.* FROM `friends`[0m
+  ↳ app/views/friends/index.html.erb:18
+  Rendered friends/index.html.erb within layouts/application (Duration: 3.7ms | Allocations: 2471)
+  Rendered home/_header.html.erb (Duration: 0.5ms | Allocations: 297)
+  Rendered layout layouts/application.html.erb (Duration: 7.8ms | Allocations: 5595)
+Completed 200 OK in 10ms (Views: 9.2ms | ActiveRecord: 0.2ms | Allocations: 6776)
+
+
+Started DELETE "/friends/20" for 127.0.0.1 at 2021-12-27 19:04:31 -0300
+Processing by FriendsController#destroy as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"20"}
+  [1m[36mFriend Load (0.2ms)[0m  [1m[34mSELECT `friends`.* FROM `friends` WHERE `friends`.`id` = 20 LIMIT 1[0m
+  ↳ app/controllers/friends_controller.rb:63:in `set_friend'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/friends_controller.rb:52:in `destroy'
+  [1m[36mFriend Destroy (0.2ms)[0m  [1m[31mDELETE FROM `friends` WHERE `friends`.`id` = 20[0m
+  ↳ app/controllers/friends_controller.rb:52:in `destroy'
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/friends_controller.rb:52:in `destroy'
+Redirected to http://localhost:3000/friends
+Completed 302 Found in 5ms (ActiveRecord: 1.0ms | Allocations: 2651)
+
+
+Started GET "/friends" for 127.0.0.1 at 2021-12-27 19:04:31 -0300
+Processing by FriendsController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering friends/index.html.erb within layouts/application
+  [1m[36mFriend Load (0.2ms)[0m  [1m[34mSELECT `friends`.* FROM `friends`[0m
+  ↳ app/views/friends/index.html.erb:18
+  Rendered friends/index.html.erb within layouts/application (Duration: 2.2ms | Allocations: 1514)
+  Rendered home/_header.html.erb (Duration: 0.1ms | Allocations: 80)
+  Rendered layouts/_alerts.erb (Duration: 0.6ms | Allocations: 166)
+  Rendered layout layouts/application.html.erb (Duration: 6.1ms | Allocations: 4152)
+Completed 200 OK in 7ms (Views: 6.3ms | ActiveRecord: 0.2ms | Allocations: 4560)
+
+
+Started DELETE "/friends/16" for 127.0.0.1 at 2021-12-27 19:04:36 -0300
+Processing by FriendsController#destroy as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"16"}
+  [1m[36mFriend Load (0.3ms)[0m  [1m[34mSELECT `friends`.* FROM `friends` WHERE `friends`.`id` = 16 LIMIT 1[0m
+  ↳ app/controllers/friends_controller.rb:63:in `set_friend'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/friends_controller.rb:52:in `destroy'
+  [1m[36mFriend Destroy (0.2ms)[0m  [1m[31mDELETE FROM `friends` WHERE `friends`.`id` = 16[0m
+  ↳ app/controllers/friends_controller.rb:52:in `destroy'
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/friends_controller.rb:52:in `destroy'
+Redirected to http://localhost:3000/friends
+Completed 302 Found in 6ms (ActiveRecord: 1.5ms | Allocations: 2555)
+
+
+Started GET "/friends" for 127.0.0.1 at 2021-12-27 19:04:36 -0300
+Processing by FriendsController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering friends/index.html.erb within layouts/application
+  [1m[36mFriend Load (0.2ms)[0m  [1m[34mSELECT `friends`.* FROM `friends`[0m
+  ↳ app/views/friends/index.html.erb:18
+  Rendered friends/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 1206)
+  Rendered home/_header.html.erb (Duration: 0.1ms | Allocations: 80)
+  Rendered layouts/_alerts.erb (Duration: 0.0ms | Allocations: 17)
+  Rendered layout layouts/application.html.erb (Duration: 4.8ms | Allocations: 3590)
+Completed 200 OK in 6ms (Views: 4.9ms | ActiveRecord: 0.2ms | Allocations: 3934)
+
+

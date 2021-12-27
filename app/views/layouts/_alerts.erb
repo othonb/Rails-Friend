@@ -1,11 +1,9 @@
 <script>
-    const alert = document.getElementById('alert_message')
-        alert.style.display = "block"
 
-        setTimeout(function(){
-            alert.style.display = "none"
-
-        }, 3000);
+    // Timer to close alert after 3 seconds it's been shown
+    setTimeout(function(){
+        document.getElementById('alert_message').style.display = "none"
+    }, 3000);
 
 </script>
 

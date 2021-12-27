@@ -11,9 +11,9 @@
   </p>
   <br/>
 
-  <%= link_to 'Edit', edit_friend_path(@friend), class:"btn btn-secondary fa fa-edit" %>
+  <%= link_to ' Edit', edit_friend_path(@friend), class:"btn btn-secondary fa fa-edit" %>
 
-  <%= link_to 'Delete', @friend, method: :delete, onclick: "return confirm('Are you sure?')", class: "btn btn-danger fa fa-trash" %>
+  <%= button_to ' Delete', @friend, method: :delete, onclick: "return confirm('Are you sure?')", class: "btn btn-danger fa fa-trash", form: {style: 'display:inline-block;'} %>
 
   <%= link_to " Back to friends", friends_path, class: "btn btn-secondary fa fa-chevron-left" %>
 
