@@ -1,6 +1,5 @@
-<p style="color: green"><%= notice %></p>
 
-<h1>Friends</h1>
+<h1>All My Friends</h1>
 
 <div id="friends">
   <table class="table table-striped table-bordered table-hover" >
@@ -19,14 +18,14 @@
     <% @friends.each do |friend| %>
       <tr>
         <th scope="row"><%= friend.id %></th>
-        <td><%= friend.first_name %></td>
-        <td><%= friend.last_name %></td>
-        <td><%= friend.email %></td>
-        <td><%= friend.phone %></td>
-        <td><%= friend.twitter %></td>
+        <td><%= link_to friend.first_name, friend, method: :get %></td>
+        <td><%= link_to friend.last_name, friend, method: :get %></td>
+        <td><%= link_to friend.email, friend, method: :get %></td>
+        <td><%= link_to friend.phone, friend, method: :get %></td>
+        <td><%= link_to friend.twitter, friend, method: :get %></td>
         <td>
           <%= link_to "", edit_friend_path(friend), class:"btn btn-primary fa fa-edit" %>
-          <%= button_to "", friend, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-danger fa fa-trash" %>
+          <%= button_to "", friend, method: :delete, onclick: "return confirm('Are you sure?')", class: "btn btn-danger fa fa-trash", form: {style: 'display:inline-block;'} %>
         </td>
       </tr>
     <% end %>
@@ -37,4 +36,4 @@
 
 </div>
 
-<%= link_to "New friend", new_friend_path, class:"btn btn-secondary" %>
+<%= link_to " New friend", new_friend_path, class:"btn btn-secondary fa fa-plus-circle" %>

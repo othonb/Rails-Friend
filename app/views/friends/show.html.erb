@@ -1,9 +1,23 @@
-<h1>Editing friend</h1>
 
-<%= render "form", friend: @friend %>
+<div class="bg-light p-5 rounded-lg m-3">
+  <h1 class="display-4">
+    <%= @friend.first_name %>
+    <%= @friend.last_name %>
+  </h1>
+  <p class="lead">
+    <b>Email  : </b> <%= @friend.email %>  <br/>
+    <b>Phone  : </b><%= @friend.phone %>  <br/>
+    <b>Twitter: </b><%= @friend.twitter %> <br/>
+  </p>
+  <br/>
 
-<br>
+  <%= link_to 'Edit', edit_friend_path(@friend), class:"btn btn-secondary fa fa-edit" %>
 
-<div>
-  <%= link_to "Back to friends", friends_path, class: "btn btn-secondary" %>
+  <%= link_to 'Delete', @friend, method: :delete, onclick: "return confirm('Are you sure?')", class: "btn btn-danger fa fa-trash" %>
+
+  <%= link_to " Back to friends", friends_path, class: "btn btn-secondary fa fa-chevron-left" %>
+
 </div>
+
+
+
